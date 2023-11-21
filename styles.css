@@ -1,21 +1,73 @@
 body {
   background-color: #f5d9d5;
   font-family: "Nunito", sans-serif;
+  overflow-x: hidden;
 }
-#mainNavbar .navbar-brand {
+img {
+  width: 100%;
+}
+.scrolled {
+  background-color: #da096a;
+  transition: 700ms;
+  padding: 10px 0 0 10px;
+}
+.navbar-brand {
   color: #ea1c2c;
+  font-size: 1.25em;
+  font-weight: 200;
+}
+.navbar-brand-scrolled {
+  color: white;
+}
+
+.navbar-nav .nav-link.active {
+  color: white;
 }
 
 #mainNavbar {
   font-size: 1.5rem;
   font-weight: 200;
 }
-#mainNavbar .nav-link {
+.nav-link {
   color: white;
+  font-size: 1.25em;
+  font-weight: 200;
 }
-#mainNavbar .nav-link:hover {
+
+.nav-link:hover {
   color: #ea1c2c;
+}
+.flayer-label span {
+  color: #ea1c2c;
+}
+.flayer-label > h2 {
+  font-size: 4em;
+  font-weight: 200;
 }
 #candy-hand {
   background-color: #2ab7ca;
+}
+.aboutCandys h2 {
+  color: #ea1c2c;
+  font-weight: 200;
+  font-size: 2rem;
+}
+.aboutCandys p {
+  color: #ee187c;
+  font-weight: 200;
+  font-size: 1.225rem;
+}
+
+@media (max-width: 1300px) {
+  .flayer-label > h2 {
+    font-size: 3em;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    background-color: #da096ba8;
+  }
+  .navbar-brand {
+    color: #fff;
+  }
 }
